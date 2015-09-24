@@ -1,0 +1,117 @@
+$primaryBlack:  rgb(51,51,51);
+$secondaryBlack: rgb(66,66,66);
+$primaryBlue: rgb(0,204,214);
+$primaryWhite: rgb(239,239,239);
+$primaryYellow: rgb(255,217,0);
+
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Cabin);
+
+@function makelongshadow($n, $color) {
+  $val: 0px 0px 0px $color;
+    @for $i from 1 through $n {
+      $val: #{$val}, #{$i * -1}px #{$i}px 0px #{$color};
+  }
+  @return $val;
+}
+
+@mixin longshadow($n, $color){
+  text-shadow: makelongshadow($n, $color);
+};
+
+@mixin centerGoodness {
+  margin:0 auto;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  align-items:center;
+}
+html {
+  height: 100%;
+}
+body {
+  background-color: $primaryBlack;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.photoTop {
+  background-image: url("./assets/BlankSpaceNEW.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 85vh;
+  width: 100%;
+  margin: 0 auto;
+  opacity: 0.95;
+  overflow: hidden;
+}
+
+.socialContainer {
+  @include centerGoodness;
+  padding: 0;
+  margin: 1em;
+}
+
+.navLeft {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    transform: skew(10deg);
+    letter-spacing:.075em;
+    margin: 0 auto;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    max-width: 20%;
+  }
+h1 {
+  font-size: 7em;
+}
+h2 {
+  font-size: 2.5em;
+}
+.navRight {
+  font-family: 'Lobster', cursive;
+  color: $primaryBlack;
+  transform: skew(2deg);
+  margin: 0 auto;
+  padding-right: 1em;
+  padding-left: 1em;
+  position: absolute;
+  left: 5%;
+  top: 60%;
+  min-width: 15%;
+  max-width: 25%;
+  background-color: $primaryYellow;
+}
+.btn:hover {
+  background-color: $primaryYellow;
+}
+
+
+.shadow-yellow {
+  @include longshadow(5, $primaryYellow);
+}
+.shadow-white {
+  @include longshadow(1, $primaryWhite);
+}
+
+@media (max-width: 800px) {
+  .photoTop {
+    background-image: url("./assets/BlankSpace.jpg");
+  }
+  .navRight{
+    display: none;
+  }
+  .navLeft{
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  max-width: 100%;
+  font-size: .5em;
+  overflow:hidden;
+  left: 0%;
+  top: 0%;
+  }
+}

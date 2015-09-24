@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Cabin);
+html {
+  height: 100%; }
+
+body {
+  background-color: #333333;
+  height: 100%;
+  margin: 0 auto;
+  position: relative; }
+
+.photoTop {
+  background-image: url("./assets/BlankSpaceNEW.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 85vh;
+  width: 100%;
+  margin: 0 auto;
+  opacity: 0.95;
+  overflow: hidden; }
+
+.socialContainer {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin: 1em; }
+
+.navLeft {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  transform: skew(10deg);
+  letter-spacing: .075em;
+  margin: 0 auto;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  max-width: 20%; }
+
+h1 {
+  font-size: 7em; }
+
+h2 {
+  font-size: 2.5em; }
+
+.navRight {
+  font-family: 'Lobster', cursive;
+  color: #333333;
+  transform: skew(2deg);
+  margin: 0 auto;
+  padding-right: 1em;
+  padding-left: 1em;
+  position: absolute;
+  left: 5%;
+  top: 60%;
+  min-width: 15%;
+  max-width: 25%;
+  background-color: #ffd900; }
+
+.btn:hover {
+  background-color: #ffd900; }
+
+.shadow-yellow {
+  text-shadow: 0px 0px 0px #ffd900, -1px 1px 0px #ffd900, -2px 2px 0px #ffd900, -3px 3px 0px #ffd900, -4px 4px 0px #ffd900, -5px 5px 0px #ffd900; }
+
+.shadow-white {
+  text-shadow: 0px 0px 0px #efefef, -1px 1px 0px #efefef; }
+
+@media (max-width: 800px) {
+  .photoTop {
+    background-image: url("./assets/BlankSpace.jpg"); }
+
+  .navRight {
+    display: none; }
+
+  .navLeft {
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    max-width: 100%;
+    font-size: .5em;
+    overflow: hidden;
+    left: 0%;
+    top: 0%; } }
+
+/*# sourceMappingURL=styles.css.map */
