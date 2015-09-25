@@ -39,6 +39,33 @@ body {
   top: 15%;
   max-width: 20%; }
 
+.aboutHead {
+  font-family: 'Lobster', sans-serif;
+  text-align: center; }
+
+.aboutBody {
+  display: block;
+  border-top: 2px solid #333333;
+  text-align: left;
+  padding-left: 1em;
+  padding-top: 1em; }
+
+.fa-border {
+  border: solid 2px #efefef;
+  padding: .2em;
+  margin-bottom: -.1em; }
+
+.brand {
+  background-color: #ffd900;
+  color: #424242;
+  letter-spacing: .075em;
+  font-size: 2em;
+  margin: 1em auto;
+  position: relative;
+  max-width: 90%;
+  padding: .75em;
+  border-radius: .5em; }
+
 h1 {
   font-size: 7em; }
 
