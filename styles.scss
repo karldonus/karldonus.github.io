@@ -50,9 +50,11 @@ body {
 }
 
 .socialContainer {
-  @include centerGoodness;
-  padding: 0;
-  margin: 1em;
+  margin: 0 auto;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  align-items:center;
 }
 
 .navLeft {
