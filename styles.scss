@@ -24,7 +24,8 @@ $primaryYellow: rgb(255,217,0);
   flex-direction:row;
   justify-content:space-around;
   align-items:center;
-  -webkit-justify-content: space-around;
+  display: -webkit-flex; /* safari */
+  -webkit-justify-content: space-around; /* safari*/
 }
 html {
   height: 100%;
