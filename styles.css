@@ -1,11 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 @import url(https://fonts.googleapis.com/css?family=Cabin);
 html {
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
 
 body {
   background-color: #333333;
   height: 100%;
+  width: 100%;
   margin: 0 auto;
   position: relative; }
 
@@ -41,30 +43,33 @@ body {
 
 .aboutHead {
   font-family: 'Lobster', sans-serif;
+  color: #ffd900;
   text-align: center; }
 
 .aboutBody {
   display: block;
-  border-top: 2px solid #333333;
+  color: #efefef;
+  border-top: 2px solid #ffd900;
+  border-bottom: 2px solid #ffd900;
   text-align: left;
   padding-left: 1em;
   padding-top: 1em; }
 
 .fa-border {
-  border: solid 2px #efefef;
+  border: solid 2px #ffd900;
   padding: .2em;
   margin-bottom: -.1em; }
 
+.fa-quote-left, .keywords {
+  color: #ffd900; }
+
 .brand {
-  background-color: #ffd900;
-  color: #424242;
   letter-spacing: .075em;
   font-size: 2em;
-  margin: 1em auto;
+  margin: 0 1em 1em 1em;
   position: relative;
-  max-width: 90%;
   padding: .75em;
-  border-radius: .5em; }
+  align-items: center; }
 
 h1 {
   font-size: 7em; }

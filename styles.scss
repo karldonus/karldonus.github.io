@@ -28,10 +28,12 @@ $primaryYellow: rgb(255,217,0);
 }
 html {
   height: 100%;
+  width: 100%;
 }
 body {
   background-color: $primaryBlack;
   height: 100%;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -67,32 +69,37 @@ body {
 
   .aboutHead {
     font-family: 'Lobster', sans-serif;
+    color: $primaryYellow;
     text-align: center;
   }
+
   .aboutBody {
     display:block;
-    border-top: 2px solid $primaryBlack;
+    color: $primaryWhite;
+    border-top: 2px solid $primaryYellow;
+    border-bottom: 2px solid $primaryYellow;
     text-align: left;
     padding-left: 1em;
     padding-top: 1em;
   }
 
   .fa-border {
-    border: solid 2px $primaryWhite;
+    border: solid 2px $primaryYellow;
     padding: .2em;;
     margin-bottom: -.1em;
   }
 
+  .fa-quote-left, .keywords {
+    color: $primaryYellow;
+  }
+
   .brand {
-    background-color: $primaryYellow;
-    color: $secondaryBlack;
     letter-spacing:.075em;
     font-size: 2em;
-    margin: 1em auto;
+    margin: 0 1em 1em 1em;
     position: relative;
-    max-width: 90%;
     padding: .75em;
-    border-radius: .5em;
+    align-items: center;
   }
 
 h1 {
