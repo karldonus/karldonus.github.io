@@ -14,10 +14,9 @@ body {
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 85vh;
+  height: 80vh;
   width: 100%;
   margin: 0 auto;
-  opacity: 0.95;
   overflow: hidden; }
 
 .socialContainer {
@@ -36,8 +35,8 @@ body {
   letter-spacing: .075em;
   margin: 0 auto;
   position: absolute;
-  left: 5%;
-  top: 5%;
+  left: 15%;
+  top: 15%;
   max-width: 20%; }
 
 h1 {
@@ -45,20 +44,6 @@ h1 {
 
 h2 {
   font-size: 2.5em; }
-
-.navRight {
-  font-family: 'Lobster', cursive;
-  color: #333333;
-  transform: skew(2deg);
-  margin: 0 auto;
-  padding-right: 1em;
-  padding-left: 1em;
-  position: absolute;
-  left: 5%;
-  top: 60%;
-  min-width: 15%;
-  max-width: 25%;
-  background-color: #ffd900; }
 
 .btn:hover {
   background-color: #ffd900; }
@@ -73,17 +58,14 @@ h2 {
   .photoTop {
     background-image: url("./assets/BlankSpace.jpg"); }
 
-  .navRight {
-    display: none; }
-
   .navLeft {
     text-align: center;
     margin: 0 auto;
     position: relative;
     max-width: 100%;
-    font-size: .5em;
+    font-size: .75em;
     overflow: hidden;
     left: 0%;
-    top: 0%; } }
+    top: 15%; } }
 
 /*# sourceMappingURL=styles.css.map */
