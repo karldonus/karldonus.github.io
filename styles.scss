@@ -20,11 +20,11 @@ $primaryYellow: rgb(255,217,0);
 };
 
 @mixin centerGoodness {
-  margin:0 auto;
   display:flex;
   flex-direction:row;
   justify-content:space-around;
   align-items:center;
+  -webkit-justify-content: space-around;
 }
 html {
   height: 100%;
@@ -50,11 +50,8 @@ body {
 }
 
 .socialContainer {
-  margin: 0 auto;
-  display:flex;
-  flex-direction:row;
-  justify-content:space-around;
-  align-items:center;
+  @include centerGoodness;
+  margin: 1em;
 }
 
 .navLeft {
