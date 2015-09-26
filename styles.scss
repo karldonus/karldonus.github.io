@@ -28,10 +28,7 @@ $primaryYellow: rgb(255,217,0);
   display: -webkit-flex; /* safari */
   -webkit-justify-content: space-around; /* safari*/
 }
-html {
-  height: 100%;
-  width: 100%;
-}
+
 body {
   background-color: $primaryBlack;
   height: 100%;
@@ -39,21 +36,59 @@ body {
   margin: 0 auto;
   position: relative;
 }
-
-.photoTop {
-  background-image: url("./assets/BlankSpaceNEW.jpg");
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 80vh;
+html {
+  height: 100%;
   width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
+}
+h1 {
+  font-size: 7em;
+}
+h2 {
+  font-size: 2.5em;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4{
+  font-size: 1.25em;
 }
 
-.socialContainer {
-  @include centerGoodness;
-  margin: 1em;
+.aboutBody {
+  display:block;
+  color: $primaryWhite;
+  border-top: 2px solid $primaryYellow;
+  border-bottom: 2px solid $primaryYellow;
+  text-align: left;
+  padding-left: 1em;
+  padding-top: 1em;
+  font-family: 'Cabin', sans-serif;
+
+}
+
+.aboutHead, .projectsHead {
+  font-family: 'Lobster', sans-serif;
+  color: $primaryYellow;
+  text-align: center;
+}
+.brand {
+  letter-spacing:.075em;
+  font-size: 2em;
+  margin: 0 1em 0 1em;
+  position: relative;
+  padding: .75em;
+  align-items: center;
+}
+.btn:hover {
+  background-color: $primaryYellow;
+}
+.fa-border {
+  border: solid 2px $primaryYellow;
+  padding: .2em;;
+  margin-bottom: -.1em;
+}
+
+.fa-quote-left, .keywords {
+  color: $primaryYellow;
 }
 
 .navLeft {
@@ -68,102 +103,22 @@ body {
     max-width: 20%;
   }
 
-  .aboutHead, .projectsHead {
-    font-family: 'Lobster', sans-serif;
-    color: $primaryYellow;
-    text-align: center;
-  }
-
-  .aboutBody {
-    display:block;
-    color: $primaryWhite;
-    border-top: 2px solid $primaryYellow;
-    border-bottom: 2px solid $primaryYellow;
-    text-align: left;
-    padding-left: 1em;
-    padding-top: 1em;
-    font-family: 'Cabin', sans-serif;
-
-  }
-
-  .fa-border {
-    border: solid 2px $primaryYellow;
-    padding: .2em;;
-    margin-bottom: -.1em;
-  }
-
-  .fa-quote-left, .keywords {
-    color: $primaryYellow;
-  }
-
-  .brand {
-    letter-spacing:.075em;
-    font-size: 2em;
-    margin: 0 1em 0 1em;
-    position: relative;
-    padding: .75em;
-    align-items: center;
-  }
-
-h1 {
-  font-size: 7em;
+.photoTop {
+  background-image: url("./assets/BlankSpaceNEW.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
 }
-h2 {
-  font-size: 2.5em;
-}
-h3 {
-  font-size: 1.5em;
-}
-
-.btn:hover {
-  background-color: $primaryYellow;
-}
-
-.shadow-yellow {
-  @include longshadow(5, $primaryYellow);
-}
-.shadow-white {
-  @include longshadow(1, $primaryWhite);
-}
-
 .projects {
   width: 100%;
   overflow: hidden;
   font-size: 2em;
   padding: .75em;
 }
-.projectHead {
-  width: 100%;
-  font-family: 'Lobster', cursive;
-  color: $primaryYellow;
-  @include centerGoodness;
-}
-
-
-.projectContainer {
-  width: 100%;
-  display: flex;
-}
-
-.projectImage{
-  @include centerGoodness;
-  width: 50%;
-  margin: 1em;
-  opacity: .7;
-}
-.projectImage:hover{
-  opacity: 1;
-}
-.projectImg{
-  width: 100%;
-}
-
-
-.projectDetails {
-  width: 50%;
-  margin: 1em;
-}
-
 .projectBody {
   width: 100%;
   font-family: 'Cabin', sans-serif;
@@ -174,11 +129,47 @@ h3 {
   letter-spacing: .1em;
   padding: .5em;
 }
+.projectContainer {
+  width: 100%;
+  display: flex;
+}
+.projectDetails {
+  width: 50%;
+  margin: 1em;
+}
+.projectHead {
+  width: 100%;
+  font-family: 'Lobster', cursive;
+  color: $primaryYellow;
+  @include centerGoodness;
+}
+.projectImage{
+  @include centerGoodness;
+  width: 50%;
+  margin: 1em 1em 0 1em;
+  opacity: .7;
+}
+.projectImage:hover{
+  opacity: 1;
+}
+.projectImg{
+  width: 100%;
+}
+.shadow-yellow {
+  @include longshadow(5, $primaryYellow);
+}
+.socialContainer {
+  @include centerGoodness;
+  margin: 1em;
+}
 
-
+//for phones not tablets
 @media (max-width: 800px) {
-  .photoTop {
-    background-image: url("./assets/BlankSpace.jpg");
+  .aboutBody{
+    padding-left: 0;
+  }
+  .brand{
+    margin: 0;
   }
   .navLeft{
   text-align: center;
@@ -190,27 +181,24 @@ h3 {
   left: 0%;
   top: 15%;
   }
-  .aboutBody{
-    padding-left: 0;
-  }
-  .brand{
-    margin: 0;
-  }
-  .projectImage{
-    width: 100%;
-    margin: 0;
-    opacity: 1;
-  }
-  .projectDetails{
-    width: 100%;
-    margin: 0;
+  .photoTop {
+    background-image: url("./assets/BlankSpace.jpg");
   }
   .projectContainer{
     display: block;
     width: 100%;
     align-items:center;
   }
+  .projectDetails{
+    width: 100%;
+    margin: 0;
+  }
   .projectsHead{
     padding-bottom: 1em;
+  }
+  .projectImage{
+    width: 100%;
+    margin: 0;
+    opacity: 1;
   }
 }

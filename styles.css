@@ -1,9 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 @import url(https://fonts.googleapis.com/css?family=Cabin);
-html {
-  height: 100%;
-  width: 100%; }
-
 body {
   background-color: #333333;
   height: 100%;
@@ -11,28 +7,55 @@ body {
   margin: 0 auto;
   position: relative; }
 
-.photoTop {
-  background-image: url("./assets/BlankSpaceNEW.jpg");
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 80vh;
-  width: 100%;
-  margin: 0 auto;
-  overflow: hidden; }
+html {
+  height: 100%;
+  width: 100%; }
 
-.socialContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  -webkit-align-items: center;
-  /* safari */
-  display: -webkit-flex;
-  /* safari */
-  -webkit-justify-content: space-around;
-  /* safari*/
-  margin: 1em; }
+h1 {
+  font-size: 7em; }
+
+h2 {
+  font-size: 2.5em; }
+
+h3 {
+  font-size: 1.5em; }
+
+h4 {
+  font-size: 1.25em; }
+
+.aboutBody {
+  display: block;
+  color: #efefef;
+  border-top: 2px solid #ffd900;
+  border-bottom: 2px solid #ffd900;
+  text-align: left;
+  padding-left: 1em;
+  padding-top: 1em;
+  font-family: 'Cabin', sans-serif; }
+
+.aboutHead, .projectsHead {
+  font-family: 'Lobster', sans-serif;
+  color: #ffd900;
+  text-align: center; }
+
+.brand {
+  letter-spacing: .075em;
+  font-size: 2em;
+  margin: 0 1em 0 1em;
+  position: relative;
+  padding: .75em;
+  align-items: center; }
+
+.btn:hover {
+  background-color: #ffd900; }
+
+.fa-border {
+  border: solid 2px #ffd900;
+  padding: .2em;
+  margin-bottom: -.1em; }
+
+.fa-quote-left, .keywords {
+  color: #ffd900; }
 
 .navLeft {
   text-align: center;
@@ -45,60 +68,39 @@ body {
   top: 15%;
   max-width: 20%; }
 
-.aboutHead, .projectsHead {
-  font-family: 'Lobster', sans-serif;
-  color: #ffd900;
-  text-align: center; }
-
-.aboutBody {
-  display: block;
-  color: #efefef;
-  border-top: 2px solid #ffd900;
-  border-bottom: 2px solid #ffd900;
-  text-align: left;
-  padding-left: 1em;
-  padding-top: 1em;
-  font-family: 'Cabin', sans-serif; }
-
-.fa-border {
-  border: solid 2px #ffd900;
-  padding: .2em;
-  margin-bottom: -.1em; }
-
-.fa-quote-left, .keywords {
-  color: #ffd900; }
-
-.brand {
-  letter-spacing: .075em;
-  font-size: 2em;
-  margin: 0 1em 0 1em;
-  position: relative;
-  padding: .75em;
-  align-items: center; }
-
-h1 {
-  font-size: 7em; }
-
-h2 {
-  font-size: 2.5em; }
-
-h3 {
-  font-size: 1.5em; }
-
-.btn:hover {
-  background-color: #ffd900; }
-
-.shadow-yellow {
-  text-shadow: 0px 0px 0px #ffd900, -1px 1px 0px #ffd900, -2px 2px 0px #ffd900, -3px 3px 0px #ffd900, -4px 4px 0px #ffd900, -5px 5px 0px #ffd900; }
-
-.shadow-white {
-  text-shadow: 0px 0px 0px #efefef, -1px 1px 0px #efefef; }
+.photoTop {
+  background-image: url("./assets/BlankSpaceNEW.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden; }
 
 .projects {
   width: 100%;
   overflow: hidden;
   font-size: 2em;
   padding: .75em; }
+
+.projectBody {
+  width: 100%;
+  font-family: 'Cabin', sans-serif;
+  color: #efefef;
+  border-top: 2px solid #ffd900;
+  border-bottom: 2px solid #ffd900;
+  font-size: .75em;
+  letter-spacing: .1em;
+  padding: .5em; }
+
+.projectContainer {
+  width: 100%;
+  display: flex; }
+
+.projectDetails {
+  width: 50%;
+  margin: 1em; }
 
 .projectHead {
   width: 100%;
@@ -115,10 +117,6 @@ h3 {
   -webkit-justify-content: space-around;
   /* safari*/ }
 
-.projectContainer {
-  width: 100%;
-  display: flex; }
-
 .projectImage {
   display: flex;
   flex-direction: row;
@@ -131,7 +129,7 @@ h3 {
   -webkit-justify-content: space-around;
   /* safari*/
   width: 50%;
-  margin: 1em;
+  margin: 1em 1em 0 1em;
   opacity: .7; }
 
 .projectImage:hover {
@@ -140,23 +138,28 @@ h3 {
 .projectImg {
   width: 100%; }
 
-.projectDetails {
-  width: 50%;
+.shadow-yellow {
+  text-shadow: 0px 0px 0px #ffd900, -1px 1px 0px #ffd900, -2px 2px 0px #ffd900, -3px 3px 0px #ffd900, -4px 4px 0px #ffd900, -5px 5px 0px #ffd900; }
+
+.socialContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  -webkit-align-items: center;
+  /* safari */
+  display: -webkit-flex;
+  /* safari */
+  -webkit-justify-content: space-around;
+  /* safari*/
   margin: 1em; }
 
-.projectBody {
-  width: 100%;
-  font-family: 'Cabin', sans-serif;
-  color: #efefef;
-  border-top: 2px solid #ffd900;
-  border-bottom: 2px solid #ffd900;
-  font-size: .75em;
-  letter-spacing: .1em;
-  padding: .5em; }
-
 @media (max-width: 800px) {
-  .photoTop {
-    background-image: url("./assets/BlankSpace.jpg"); }
+  .aboutBody {
+    padding-left: 0; }
+
+  .brand {
+    margin: 0; }
 
   .navLeft {
     text-align: center;
@@ -168,27 +171,24 @@ h3 {
     left: 0%;
     top: 15%; }
 
-  .aboutBody {
-    padding-left: 0; }
-
-  .brand {
-    margin: 0; }
-
-  .projectImage {
-    width: 100%;
-    margin: 0;
-    opacity: 1; }
-
-  .projectDetails {
-    width: 100%;
-    margin: 0; }
+  .photoTop {
+    background-image: url("./assets/BlankSpace.jpg"); }
 
   .projectContainer {
     display: block;
     width: 100%;
     align-items: center; }
 
+  .projectDetails {
+    width: 100%;
+    margin: 0; }
+
   .projectsHead {
-    padding-bottom: 1em; } }
+    padding-bottom: 1em; }
+
+  .projectImage {
+    width: 100%;
+    margin: 0;
+    opacity: 1; } }
 
 /*# sourceMappingURL=styles.css.map */
