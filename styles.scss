@@ -26,6 +26,7 @@ $primaryYellow: rgb(255,217,0);
   flex-direction:row;
   justify-content:space-around;
   align-items:center;
+  -webkit-align-items: center; /* safari */
   display: -webkit-flex; /* safari */
   -webkit-justify-content: space-around; /* safari*/
 }
@@ -190,6 +191,12 @@ h3 {
   overflow:hidden;
   left: 0%;
   top: 15%;
+  }
+  .aboutBody{
+    padding-left: 0;
+  }
+  .brand{
+    margin: 0;
   }
   .projectImage{
     width: 100%;
