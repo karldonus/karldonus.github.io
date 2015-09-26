@@ -1,3 +1,5 @@
+
+
 $primaryBlack:  rgb(51,51,51);
 $secondaryBlack: rgb(66,66,66);
 $primaryBlue: rgb(51,122,183);
@@ -67,7 +69,7 @@ body {
     max-width: 20%;
   }
 
-  .aboutHead {
+  .aboutHead, .projectsHead {
     font-family: 'Lobster', sans-serif;
     color: $primaryYellow;
     text-align: center;
@@ -81,6 +83,8 @@ body {
     text-align: left;
     padding-left: 1em;
     padding-top: 1em;
+    font-family: 'Cabin', sans-serif;
+
   }
 
   .fa-border {
@@ -96,7 +100,7 @@ body {
   .brand {
     letter-spacing:.075em;
     font-size: 2em;
-    margin: 0 1em 1em 1em;
+    margin: 0 1em 0 1em;
     position: relative;
     padding: .75em;
     align-items: center;
@@ -108,11 +112,13 @@ h1 {
 h2 {
   font-size: 2.5em;
 }
+h3 {
+  font-size: 1.5em;
+}
 
 .btn:hover {
   background-color: $primaryYellow;
 }
-
 
 .shadow-yellow {
   @include longshadow(5, $primaryYellow);
@@ -120,6 +126,56 @@ h2 {
 .shadow-white {
   @include longshadow(1, $primaryWhite);
 }
+
+.projects {
+  width: 100%;
+  overflow: hidden;
+  font-size: 2em;
+  padding: .75em;
+}
+.projectHead {
+  width: 100%;
+  font-family: 'Lobster', cursive;
+  color: $primaryYellow;
+  @include centerGoodness;
+}
+
+
+.projectContainer {
+  width: 100%;
+  display: flex;
+}
+
+.projectImage{
+  @include centerGoodness;
+  width: 50%;
+  margin: 1em;
+  opacity: .7;
+}
+.projectImage:hover{
+  opacity: 1;
+}
+.projectImg{
+  width: 100%;
+}
+
+
+.projectDetails {
+  width: 50%;
+  margin: 1em;
+}
+
+.projectBody {
+  width: 100%;
+  font-family: 'Cabin', sans-serif;
+  color: $primaryWhite;
+  border-top: 2px solid $primaryYellow;
+  border-bottom: 2px solid $primaryYellow;
+  font-size: .75em;
+  letter-spacing: .1em;
+  padding: .5em;
+}
+
 
 @media (max-width: 800px) {
   .photoTop {
@@ -134,5 +190,22 @@ h2 {
   overflow:hidden;
   left: 0%;
   top: 15%;
+  }
+  .projectImage{
+    width: 100%;
+    margin: 0;
+    opacity: 1;
+  }
+  .projectDetails{
+    width: 100%;
+    margin: 0;
+  }
+  .projectContainer{
+    display: block;
+    width: 100%;
+    align-items:center;
+  }
+  .projectsHead{
+    padding-bottom: 1em;
   }
 }
