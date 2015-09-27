@@ -132,6 +132,9 @@ h4{
 .projectContainer {
   width: 100%;
   display: flex;
+  display: -webkit-flex;
+  display:-moz-flex;
+  margin-bottom: 1em;
 }
 .projectDetails {
   width: 50%;
