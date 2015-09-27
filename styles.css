@@ -129,11 +129,7 @@ h4 {
   -webkit-justify-content: space-around;
   /* safari*/
   width: 50%;
-  margin: 1em 1em 0 1em;
-  opacity: .7; }
-
-.projectImage:hover {
-  opacity: 1; }
+  margin: 1em 1em 0 1em; }
 
 .projectImg {
   width: 100%; }
