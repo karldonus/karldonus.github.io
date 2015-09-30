@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width" />
   </head>
 
-  <body class="container-fluid">
     <div class="row">
       <div class="photoTop row">
               <div class="navLeft">
@@ -19,7 +18,7 @@
       </div>
     </div>
 
-    <div class="row brand">
+    <div class="row brand" id="aboutid">
         <div class="aboutHead">
           <h2>About Me</h2>
         </div>
@@ -31,7 +30,7 @@
         </div>
     </div>
 
-    <div class="projects">
+    <div class="projects" id="projectid">
       <div class="projectsHead">
         <h2>A Few of My Projects:</h2>
       </div>
@@ -81,7 +80,29 @@
             </div>
           </div>
         </div>
-
+        <!-- lynchburgRentals -->
+        <div class="projectContainer">
+          <div class="projectImage">
+            <a href="https://lynchburgrentals.herokuapp.com/" target="_blank"><img class="projectImg" src="assets/lynchburgRentals.png" alt="schoolWellness"></a>
+          </div>
+          <div class="projectDetails">
+            <div class="projectHead">
+              <h3>Lynchburg Rentals</h3>
+              <a class="btn btn-social-icon" href="https://lynchburgrentals.herokuapp.com/" target="_blank"><i class="fa fa-binoculars fa-2x"></i></a>
+              <a class="btn btn-social-icon" href="https://github.com/karldonus/generalAssemblyProjectTwo" target="_blank"><i class="fa fa-github-alt fa-2x"></i></a>
+            </div>
+            <div class="projectBody">
+              <div class="projectProcess">
+                <h4>Process: </h4>
+                Tired of wasting time with ineligible rental candidates, a Virginia-based real estate agent approached me to build a listing site that helped him better qualify prospects.
+                I found this was an excellent opportunity to learn how to incorporate AWS S3 and the Devise gem.
+              </div>
+              <div class="projectTech">
+                <h4>Tech: </h4>PostgreSQL, Ruby on Rails, &amp; AWS S3
+              </div>
+            </div>
+          </div>
+        </div>
 
 
       </div>
