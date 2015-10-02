@@ -52,7 +52,24 @@ h3 {
 h4{
   font-size: 1.25em;
 }
-
+footer {
+  background: $primaryYellow;
+  border-top-color: $primaryWhite;
+  border-top-style: solid;
+  border-top-width: 1px;
+  bottom:0px;
+  color: $primaryBlack;
+  font-size: 1em;
+  font-family: 'Lobster', cursive;
+  height:2em;
+  left:0px;
+  padding-right: 15px;
+  padding-top: 5px;
+  position:fixed;
+  text-align: center;
+  width:100%;
+  opacity: .9;
+  }
 .aboutBody {
   display:block;
   color: $primaryWhite;
@@ -159,7 +176,7 @@ h4{
 }
 .socialContainer {
   @include centerGoodness;
-  margin: 1em;
+  margin: 1em 1em 3em 1em;
 }
 
 /* NAV BAR BOOTSTRAP*/

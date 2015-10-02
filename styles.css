@@ -23,6 +23,24 @@ h3 {
 h4 {
   font-size: 1.25em; }
 
+footer {
+  background: #ffd900;
+  border-top-color: #efefef;
+  border-top-style: solid;
+  border-top-width: 1px;
+  bottom: 0px;
+  color: #333333;
+  font-size: 1em;
+  font-family: 'Lobster', cursive;
+  height: 2em;
+  left: 0px;
+  padding-right: 15px;
+  padding-top: 5px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  opacity: .9; }
+
 .aboutBody {
   display: block;
   color: #efefef;
@@ -151,9 +169,77 @@ h4 {
   /* safari */
   -webkit-justify-content: space-around;
   /* safari*/
-  margin: 1em; }
+  margin: 1em 1em 3em 1em; }
+
+/* NAV BAR BOOTSTRAP*/
+.navbar-default {
+  background: rgba(216, 3, 3, 0.9);
+  border-color: #E7E7E7; }
+
+/* title */
+.navbar-default .navbar-brand {
+  color: white;
+  font-family: 'Montserrat Subrayada', sans-serif; }
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: white; }
+
+/* link */
+.navbar-default .navbar-nav > li > a {
+  color: white; }
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: white; }
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: white;
+  background: rgba(216, 3, 3, 0.9); }
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: white;
+  background: rgba(216, 3, 3, 0.9); }
+
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+  border-top-color: #777;
+  border-bottom-color: #777; }
+
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+  border-top-color: #333;
+  border-bottom-color: #333; }
+
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+  border-top-color: #555;
+  border-bottom-color: #555; }
+
+/* mobile version */
+.navbar-default .navbar-toggle {
+  border-color: #DDD; }
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background: rgba(216, 3, 3, 0.9); }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background: white; }
 
 @media (max-width: 800px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: white; }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: black; }
+
   .aboutBody {
     padding-left: 0; }
 
