@@ -286,6 +286,9 @@ footer {
   .projectImage {
     width: 100%;
     margin: 0;
-    opacity: 1; } }
+    opacity: 1; }
+
+  .socialContainer {
+    padding-bottom: 3em; } }
 
 /*# sourceMappingURL=styles.css.map */
