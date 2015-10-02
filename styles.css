@@ -235,7 +235,8 @@ footer {
   /* safari */
   -webkit-justify-content: space-around;
   /* safari*/
-  margin: 1em 1em 3em 1em; }
+  margin: 1em 1em 3em 1em;
+  padding-bottom: 3em; }
 
 @media (max-width: 800px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -286,9 +287,6 @@ footer {
   .projectImage {
     width: 100%;
     margin: 0;
-    opacity: 1; }
-
-  .socialContainer {
-    padding-bottom: 3em; } }
+    opacity: 1; } }
 
 /*# sourceMappingURL=styles.css.map */

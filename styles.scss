@@ -244,6 +244,7 @@ footer {
 .socialContainer {
   @include centerGoodness;
   margin: 1em 1em 3em 1em;
+  padding-bottom: 3em;
 }
 
 
@@ -301,8 +302,5 @@ footer {
     width: 100%;
     margin: 0;
     opacity: 1;
-  }
-  .socialContainer {
-    padding-bottom: 3em;
   }
 }
