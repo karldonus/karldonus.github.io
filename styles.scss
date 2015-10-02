@@ -120,6 +120,73 @@ footer {
     max-width: 20%;
   }
 
+  /* NAV BAR BOOTSTRAP*/
+  .navbar-default {
+      background: $primaryYellow;
+      border-color: $primaryWhite;
+      opacity: .9;
+      font-family: 'Lobster', cursive;
+      font-size: 1.5em;
+      font-weight: 900;
+  }
+  /* title */
+  .navbar-default .navbar-brand {
+      color: $primaryBlack;
+      font-family: 'Lobster', cursive;
+      font-size: 1.5em;
+  }
+  .navbar-default .navbar-brand:hover,
+  .navbar-default .navbar-brand:focus {
+      color: $primaryBlack;
+  }
+  /* link */
+  .navbar-default .navbar-nav > li > a {
+      color: $primaryBlack;
+  }
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+      color: $primaryBlack;
+  }
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+      color: $primaryBlack;
+      background: $primaryWhite;
+  }
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:hover,
+  .navbar-default .navbar-nav > .open > a:focus {
+      color: $primaryBlack;
+      background: $primaryWhite;
+  }
+  /* caret */
+  .navbar-default .navbar-nav > .dropdown > a .caret {
+      border-top-color: #777;
+      border-bottom-color: #777;
+  }
+  .navbar-default .navbar-nav > .dropdown > a:hover .caret,
+  .navbar-default .navbar-nav > .dropdown > a:focus .caret {
+      border-top-color: #333;
+      border-bottom-color: #333;
+  }
+  .navbar-default .navbar-nav > .open > a .caret,
+  .navbar-default .navbar-nav > .open > a:hover .caret,
+  .navbar-default .navbar-nav > .open > a:focus .caret {
+      border-top-color: #555;
+      border-bottom-color: #555;
+  }
+  /* mobile version */
+  .navbar-default .navbar-toggle {
+      border-color: #DDD;
+  }
+  .navbar-default .navbar-toggle:hover,
+  .navbar-default .navbar-toggle:focus {
+      background: $primaryWhite;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+      background: $primaryBlack;
+  }
+
 .photoTop {
   background-image: url("./assets/BlankSpaceNEW.jpg");
   background-position: bottom;
@@ -179,70 +246,6 @@ footer {
   margin: 1em 1em 3em 1em;
 }
 
-/* NAV BAR BOOTSTRAP*/
-.navbar-default {
-    background: rgba(216,3,3,.9);
-    border-color: #E7E7E7;
-}
-/* title */
-.navbar-default .navbar-brand {
-    color: white;
-    font-family: 'Montserrat Subrayada', sans-serif;
-}
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-    color: white;
-}
-/* link */
-.navbar-default .navbar-nav > li > a {
-    color: white;
-}
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    color: white;
-}
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-    color: white;
-    background: rgba(216,3,3,.9);
-}
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus {
-    color: white;
-    background: rgba(216,3,3,.9);
-}
-/* caret */
-.navbar-default .navbar-nav > .dropdown > a .caret {
-    border-top-color: #777;
-    border-bottom-color: #777;
-}
-.navbar-default .navbar-nav > .dropdown > a:hover .caret,
-.navbar-default .navbar-nav > .dropdown > a:focus .caret {
-    border-top-color: #333;
-    border-bottom-color: #333;
-}
-.navbar-default .navbar-nav > .open > a .caret,
-.navbar-default .navbar-nav > .open > a:hover .caret,
-.navbar-default .navbar-nav > .open > a:focus .caret {
-    border-top-color: #555;
-    border-bottom-color: #555;
-}
-/* mobile version */
-.navbar-default .navbar-toggle {
-    border-color: #DDD;
-}
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-    background: rgba(216,3,3,.9);
-}
-.navbar-default .navbar-toggle .icon-bar {
-    background: white;
-}
-
-
-
 
 //for phones not tablets
 @media (max-width: 800px) {
@@ -270,6 +273,15 @@ footer {
   left: 0%;
   top: 15%;
   }
+  //nav bar
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: white;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: black;
+    }
   .photoTop {
     background-image: url("./assets/BlankSpace.jpg");
   }
@@ -290,4 +302,5 @@ footer {
     margin: 0;
     opacity: 1;
   }
+
 }

@@ -2,12 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
     <title>Developer Karl Donus</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/DonusSymbol.png" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <meta name="viewport" content="width=device-width" />
     <script async>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -19,6 +21,47 @@
 
     </script>
   </head>
+    <body>
+
+      <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Karl Donus</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <!-- Right Nav -->
+        <ul class="nav navbar-nav navbar-right">
+
+          <li>
+            <a href="#aboutid">About</a>
+          </li>
+          <li>
+            <a href="#projectid">Projects</a>
+          </li>
+          <li>
+            <a href="#contactid">Contact</a>
+          </li>
+        </ul>
+
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+
+
+
+
 
     <div class="row">
       <div class="photoTop row">
@@ -118,7 +161,7 @@
       </div>
     </div>
 
-    <div class="row socialContainer">
+    <div class="row socialContainer" id="contactid">
       <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/karl_donus">
         <i class="fa fa-twitter-square fa-4x"></i>
       </a>
@@ -138,6 +181,5 @@
     <footer>
       503 - 869 - 1889
     </footer>
-
   </body>
 </html>
