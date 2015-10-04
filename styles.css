@@ -51,7 +51,7 @@ footer {
   padding-top: 1em;
   font-family: 'Cabin', sans-serif; }
 
-.aboutHead, .projectsHead {
+.aboutHead, .projectsHead, .socialHead {
   font-family: 'Lobster', sans-serif;
   color: #ffd900;
   text-align: center; }
@@ -86,7 +86,7 @@ footer {
   top: 15%;
   max-width: 20%; }
 
-/* NAV BAR BOOTSTRAP*/
+/* NAV BAR BOOTSTRAP MOD*/
 .navbar-default {
   background: #ffd900;
   border-color: #efefef;
@@ -100,57 +100,6 @@ footer {
   color: #333333;
   font-family: 'Lobster', cursive;
   font-size: 1.5em; }
-
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-  color: #333333; }
-
-/* link */
-.navbar-default .navbar-nav > li > a {
-  color: #333333; }
-
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  color: #333333; }
-
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: #333333;
-  background: #efefef; }
-
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus {
-  color: #333333;
-  background: #efefef; }
-
-/* caret */
-.navbar-default .navbar-nav > .dropdown > a .caret {
-  border-top-color: #777;
-  border-bottom-color: #777; }
-
-.navbar-default .navbar-nav > .dropdown > a:hover .caret,
-.navbar-default .navbar-nav > .dropdown > a:focus .caret {
-  border-top-color: #333;
-  border-bottom-color: #333; }
-
-.navbar-default .navbar-nav > .open > a .caret,
-.navbar-default .navbar-nav > .open > a:hover .caret,
-.navbar-default .navbar-nav > .open > a:focus .caret {
-  border-top-color: #555;
-  border-bottom-color: #555; }
-
-/* mobile version */
-.navbar-default .navbar-toggle {
-  border-color: #DDD; }
-
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-  background: #efefef; }
-
-.navbar-default .navbar-toggle .icon-bar {
-  background: #333333; }
 
 .photoTop {
   background-image: url("./assets/BlankSpaceNEW.jpg");
@@ -236,7 +185,11 @@ footer {
   -webkit-justify-content: space-around;
   /* safari*/
   margin: 1em 1em 3em 1em;
-  padding-bottom: 3em; }
+  padding-bottom: 2em; }
+
+.socialHead {
+  font-size: 2em;
+  width: 100%; }
 
 @media (max-width: 800px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -261,13 +214,6 @@ footer {
     overflow: hidden;
     left: 0%;
     top: 15%; }
-
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: white; }
-
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: black; }
 
   .photoTop {
     background-image: url("./assets/BlankSpace.jpg"); }
